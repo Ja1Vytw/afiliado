@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1",
+    "title": "Fone de Ouvido Bluetooth Premium",
+    "price": "R$ 89,90",
+    "originalPrice": "R$ 159,90",
+    "discountPercent": 44,
+    "category": "Áudio",
+    "platform": "Shopee",
+    "rating": 4.8,
+    "reviews": 1243,
+    "image": "/wireless-bluetooth-headphones-black.jpg",
+    "affiliateLink": "https://shope.ee/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "2",
+    "title": "Smartwatch Fitness Tracker",
+    "price": "R$ 129,90",
+    "originalPrice": "R$ 249,90",
+    "discountPercent": 48,
+    "category": "Relógios",
+    "platform": "Mercado Livre",
+    "rating": 4.6,
+    "reviews": 892,
+    "image": "/smartwatch-fitness-tracker-sport.jpg",
+    "affiliateLink": "https://mercadolivre.com/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "3",
+    "title": "Kit Iluminação LED RGB Gamer",
+    "price": "R$ 45,90",
+    "originalPrice": "R$ 89,90",
+    "discountPercent": 49,
+    "category": "Games",
+    "platform": "Amazon",
+    "rating": 4.7,
+    "reviews": 2156,
+    "image": "/rgb-led-strip-lights-gaming.jpg",
+    "affiliateLink": "https://amazon.com.br/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "4",
+    "title": "Carregador Sem Fio Rápido 15W",
+    "price": "R$ 39,90",
+    "originalPrice": "R$ 79,90",
+    "discountPercent": 50,
+    "category": "Eletrônicos",
+    "platform": "Shopee",
+    "rating": 4.9,
+    "reviews": 567,
+    "image": "/wireless-fast-charger-pad.jpg",
+    "affiliateLink": "https://shope.ee/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "5",
+    "title": "Câmera de Segurança WiFi HD",
+    "price": "R$ 149,90",
+    "originalPrice": "R$ 299,90",
+    "discountPercent": 50,
+    "category": "Casa e Decoração",
+    "platform": "Amazon",
+    "rating": 4.5,
+    "reviews": 1890,
+    "image": "/wifi-security-camera-indoor.jpg",
+    "affiliateLink": "https://amazon.com.br/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "6",
+    "title": "Teclado Mecânico RGB Gamer",
+    "price": "R$ 199,90",
+    "originalPrice": "R$ 349,90",
+    "discountPercent": 43,
+    "category": "Games",
+    "platform": "Mercado Livre",
+    "rating": 4.8,
+    "reviews": 743,
+    "image": "/mechanical-gaming-keyboard-rgb.jpg",
+    "affiliateLink": "https://mercadolivre.com/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "7",
+    "title": "Mouse Gamer 6400 DPI",
+    "price": "R$ 79,90",
+    "originalPrice": "R$ 149,90",
+    "discountPercent": 47,
+    "category": "Games",
+    "platform": "Shopee",
+    "rating": 4.7,
+    "reviews": 1432,
+    "image": "/gaming-mouse-rgb-6400-dpi.jpg",
+    "affiliateLink": "https://shope.ee/seu-link-afiliado-aqui"
+  },
+  {
+    "id": "8",
+    "title": "Webcam Full HD 1080p",
+    "price": "R$ 119,90",
+    "originalPrice": "R$ 229,90",
+    "discountPercent": 48,
+    "category": "Informática",
+    "platform": "Amazon",
+    "rating": 4.6,
+    "reviews": 621,
+    "image": "/1080p-webcam-streaming.jpg",
+    "affiliateLink": "https://amazon.com.br/seu-link-afiliado-aqui"
+  }
+]
+
