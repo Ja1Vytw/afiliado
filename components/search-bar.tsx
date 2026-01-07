@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { Search, SlidersHorizontal } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -12,15 +11,19 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
+import { useSearch } from "@/contexts/search-context"
 
 const platforms = ["Amazon", "Shopee", "Mercado Livre"]
 
 export function SearchBar() {
-  const [searchTerm, setSearchTerm] = useState("")
-  const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>(platforms)
+  const { searchTerm, setSearchTerm, selectedPlatforms, setSelectedPlatforms } = useSearch()
 
   const handlePlatformToggle = (platform: string) => {
-    setSelectedPlatforms((prev) => (prev.includes(platform) ? prev.filter((p) => p !== platform) : [...prev, platform]))
+    setSelectedPlatforms(
+      selectedPlatforms.includes(platform)
+        ? selectedPlatforms.filter((p) => p !== platform)
+        : [...selectedPlatforms, platform]
+    )
   }
 
   return (

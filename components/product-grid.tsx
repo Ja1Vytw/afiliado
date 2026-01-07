@@ -3,14 +3,16 @@
 import React from "react"
 import { ProductCard } from "./product-card"
 import { GoogleAd } from "./google-ad"
-import { getProducts, getProductsByCategory } from "@/lib/products"
+import { searchProducts } from "@/lib/products"
+import { useSearch } from "@/contexts/search-context"
 
 interface ProductGridProps {
   category?: string
 }
 
 export function ProductGrid({ category }: ProductGridProps) {
-  const products = category ? getProductsByCategory(category) : getProducts()
+  const { searchTerm, selectedPlatforms } = useSearch()
+  const products = searchProducts(searchTerm, selectedPlatforms, category)
   
   // Criar array de elementos para renderizar (produtos + ads)
   const items: React.ReactElement[] = []
@@ -36,10 +38,14 @@ export function ProductGrid({ category }: ProductGridProps) {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-3xl font-bold tracking-tight mb-2">
-              {category ? `Produtos em ${category}` : "Ofertas em Destaque"}
+              {searchTerm 
+                ? `Resultados para "${searchTerm}"` 
+                : category 
+                  ? `Produtos em ${category}` 
+                  : "Ofertas em Destaque"}
             </h2>
             <p className="text-muted-foreground">
-              {category 
+              {searchTerm || category
                 ? `${products.length} ${products.length === 1 ? "produto encontrado" : "produtos encontrados"}` 
                 : "Produtos selecionados com os melhores descontos"}
             </p>

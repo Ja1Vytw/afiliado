@@ -46,3 +46,28 @@ export function getAllCategoryCounts(): Record<string, number> {
   return counts
 }
 
+export function searchProducts(searchTerm: string, platforms?: string[], category?: string): Product[] {
+  let products = getProducts()
+  
+  // Filtrar por categoria
+  if (category) {
+    products = products.filter((product) => product.category === category)
+  }
+  
+  // Filtrar por plataformas
+  if (platforms && platforms.length > 0) {
+    products = products.filter((product) => platforms.includes(product.platform))
+  }
+  
+  // Buscar por termo (título ou categoria)
+  if (searchTerm.trim()) {
+    const term = searchTerm.toLowerCase().trim()
+    products = products.filter((product) => 
+      product.title.toLowerCase().includes(term) ||
+      product.category.toLowerCase().includes(term)
+    )
+  }
+  
+  return products
+}
+
